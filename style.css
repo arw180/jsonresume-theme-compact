@@ -1,3 +1,19 @@
-body {
-    background: #fff;
+/* Resume styles */
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.name {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.title {
+    margin-top: 0px;
+    color: gray;
+}
+
+.contact-info ul {
+    list-style-type: none;
 }

@@ -14,12 +14,101 @@
     </style>
   </head>
   <body>
+    <!-- header -->
     <div class="container-fluid">
       {{#resume.basics}}
       <div class="row">
-        <h1> {{name}}</h1>
+        <div class="col-sm-6">
+          <h1 class="name"> {{name}}</h1>
+          <h3 class="title">{{label}}</h3>
+        </div>
+        <div class="col-sm-6 contact-info">
+          <ul>
+            <li>{{email}}</li>
+            <li>{{phone}}</li>
+            <li>
+              {{#if github}}
+              <i class="fa fa-github"></i> {{github}}
+              {{/if}}
+
+              {{#if twitter}}
+              &nbsp &nbsp<i class="fa fa-twitter"></i> {{twitter}}
+              {{/if}}
+            </li>
+          </ul>
+        </div>
       </div>
-      {{/resume.basics}}
+      <hr />
+
+      <!-- Profile/summary -->
+      <div class="row">
+        <div class="col-md-3">
+          Profile
+        </div>
+        <div class="col-md-9">
+          {{summary}}
+        </div>
+        {{/resume.basics}}
+      </div>
+      <hr />
+
+      <!-- Skills - assumes 2 skills -->
+      <div class="row">
+        <div class="col-md-3">
+          Skills
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            {{#each resume.skillsGroup1}}
+            <div
+                class="col-md-6">
+              {{name}}
+              <ul>
+                {{#each keywords}}
+                <li>{{this}}</li>
+                {{/each}}
+              </ul>
+            </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <!-- Experience -->
+      <div class="row">
+        <div class="col-md-3">
+          Experience
+        </div>
+        <div class="col-md-9">
+          {{#each resume.work}}
+          <div class="row">
+            <div class="col-md-6">
+              {{company}}
+            </div>
+            <div class="col-md-6">
+              {{startDate}} - {{endDate}}
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      <hr />
+
+      <!-- Education -->
+      <div class="row">
+        <div class="col-md-3">
+          Education
+        </div>
+        <div class="col-md-9">
+          {{#each resume.education}}
+          <div class="row">
+            {{institution}}
+          </div>
+          {{/each}}
+        </div>
+
+      </div>
     </div>
   </body>
 </html>
