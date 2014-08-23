@@ -52,25 +52,20 @@
       </div>
       <hr />
 
-      <!-- Skills - assumes 2 skills -->
+      <!-- Skills -->
       <div class="row">
         <div class="col-sm-2">
           <h4 class="section-title"> Skills </h4>
         </div>
+
         <div class="col-sm-10">
-          <div class="row">
-            {{#each resume.skillsGroup1}}
-            <div
-                class="col-sm-6">
-              {{name}}
-              <ul>
-                {{#each keywords}}
-                <li>{{this}}</li>
-                {{/each}}
-              </ul>
-            </div>
-            {{/each}}
-          </div>
+          {{#each resume.skills}}
+          <span class="skill">{{name}}:</span>
+          {{#each keywords}}
+          {{this}},
+          {{/each}}
+          <br />
+          {{/each}}
         </div>
       </div>
       <hr />
@@ -96,7 +91,7 @@
               <ul>
                 <li class="company-summary">{{summary}}</li>
                 {{#each highlights}}
-                <li>{{this}}</li>
+                <li><i class="fa fa-chevron-circle-right"></i> {{this}}</li>
                 {{/each}}
               </ul>
             </div>
@@ -116,7 +111,7 @@
           <div class="row education-section">
             <div class="col-sm-10">
               <div class="school"> {{institution}} </div>
-              {{studyType}} in {{area}}
+              <i class="fa fa-graduation-cap"></i> {{studyType}} in {{area}}
             </div>
             <div class="col-sm-2">
               <div class="pull-right">
