@@ -1,0 +1,25 @@
+{
+  "name": "jsonresume-theme-compact",
+  "version": "0.0.0",
+  "description": "A JSON Resume theme for a compact look",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alan Ward",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arw180/jsonresume-theme-compact.git"
+  },
+  "keywords": [
+    "json", "jsonresume", "theme", "compact"
+  ],
+  "bugs": {
+    "url": "https://github.com/arw180/jsonresume-theme-compact/issues"
+  },
+  "homepage": "https://github.com/arw180/jsonresume-theme-compact"
+}

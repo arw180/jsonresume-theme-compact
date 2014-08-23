@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="syle.css" rel="stylesheet">
+    <style>
+      {{{css}}}
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      {{#resume.basics}}
+      <div class="row">
+        <h1> {{name}}</h1>
+      </div>
+      {{/resume.basics}}
+    </div>
+  </body>
+</html>
