@@ -9,7 +9,8 @@
   "author": "Alan Ward",
   "license": "MIT",
   "dependencies": {
-    "handlebars": "^2.0.0-alpha.4"
+    "handlebars": "^2.0.0-alpha.4",
+    "moment": "^2.8.2"
   },
   "repository": {
     "type": "git",
