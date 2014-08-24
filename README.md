@@ -3,6 +3,8 @@ jsonresume-theme-compact
 
 A compact theme for a json-resume (http://jsonresume.org/)
 
+[Demo](http://themes.jsonresume.org/compact)
+
 ## Usage 
 
 To get started with this JSONResume theme, you'll need to have the 
@@ -42,3 +44,6 @@ More details about the CLI and it's commands are available [here](https://github
     you enter a network with no corresponding font-awesome icon, it will not 
     be displayed properly. You can see the networks that are supported by 
     browsing the [font-awesome icons](http://fortawesome.github.io/Font-Awesome/icons/).
+ * PDF generation via ```resume export``` doesn't quite work with this theme. For
+ creating a PDF version using this theme, try manually saving the html version 
+ via Chrome
