@@ -62,7 +62,11 @@
           {{#each resume.skills}}
           <span class="skill">{{name}}:</span>
           {{#each keywords}}
+          {{#if @last}}
+          {{this}}
+          {{else}}
           {{this}},
+          {{/if}}
           {{/each}}
           <br />
           {{/each}}
