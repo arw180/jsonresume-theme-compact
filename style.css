@@ -18,8 +18,8 @@ hr {
 .title {
     margin-top: 0px;
     margin-bottom: 0px;
-    color: gray;
-    font-size: 20px;
+    font-weight: 200;
+    font-size: 18px;
 }
 
 .contact-info ul {

@@ -34,7 +34,7 @@
           </ul>
         </div>
       </div>
-      <hr />
+      <hr style="margin-top: 0;" />
 
       <!-- Profile/summary -->
       <div class="row">
