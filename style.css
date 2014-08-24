@@ -1,18 +1,25 @@
 /* Resume styles */
 
+body {
+    font-size: 12px;
+}
+
 hr {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .name {
     margin-top: 0px;
     margin-bottom: 0px;
+    font-size: 24px;
 }
 
 .title {
     margin-top: 0px;
+    margin-bottom: 0px;
     color: gray;
+    font-size: 20px;
 }
 
 .contact-info ul {
@@ -20,7 +27,7 @@ hr {
 }
 
 .section-title {
-
+    font-size: 14px;
 }
 
 .skill {
@@ -40,7 +47,7 @@ hr {
 }
 
 .company, .school {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .company-position {
