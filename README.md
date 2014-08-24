@@ -16,13 +16,12 @@ for more information on filling these fields.
 
 When you are finished with your resume, you may test it by yet again opening the 
 command line and typing ```resume serve --theme compact``` to see how it looks 
-with this theme. You can replace the word classy with other theme names too.
+with this theme. You can replace the word compact with other theme names too.
 
 If you want a local copy of your resume, type in 
 ```resume export resumeName --theme compact```, and replace resumeName with the 
 desired filename. You can export it in pdf and txt using the ```--format``` flag, 
 like so:
-
 ```resume export resume --format pdf --theme compact```
 However, if you wish to export it to the JSONResume Registry, use the command 
 ```resume publish``` instead.
@@ -39,7 +38,7 @@ More details about the CLI and it's commands are available [here](https://github
     - references
  * Other fields are ignored too (skill level, location, full dates, etc). 
  * Your networks are shown in the top section of the resume. The resume template
-    tries to use a font-awesome icon for each network named fa-{{network}}. If 
+    tries to use a font-awesome icon for each network named ```fa-{{network}}```. If 
     you enter a network with no corresponding font-awesome icon, it will not 
     be displayed properly. You can see the networks that are supported by 
-    browsing the [font-awesome icons](http://fortawesome.github.io/Font-Awesome/icons/)
+    browsing the [font-awesome icons](http://fortawesome.github.io/Font-Awesome/icons/).
