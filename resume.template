@@ -8,12 +8,12 @@
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="syle.css" rel="stylesheet">
     <style>
       {{{css}}}
     </style>
   </head>
   <body>
+
     <!-- header -->
     <div class="container-fluid">
       {{#resume.basics}}
@@ -27,13 +27,9 @@
             <li>{{email}}</li>
             <li>{{phone}}</li>
             <li>
-              {{#if github}}
-              <i class="fa fa-github"></i> {{github}}
-              {{/if}}
-
-              {{#if twitter}}
-              &nbsp &nbsp<i class="fa fa-twitter"></i> {{twitter}}
-              {{/if}}
+              {{#each profiles}}
+              <i class="fa fa-{{toLowerCase network}}"></i> {{username}}
+              {{/each}}
             </li>
           </ul>
         </div>
@@ -57,7 +53,6 @@
         <div class="col-sm-2">
           <h4 class="section-title"> Skills </h4>
         </div>
-
         <div class="col-sm-10">
           {{#each resume.skills}}
           <span class="skill">{{name}}:</span>
@@ -87,7 +82,8 @@
               <div class="company-position"><em>{{position}}</em></div>
             </div>
             <div class="col-sm-6">
-              <span class="pull-right"> {{prettifyDate startDate}} - {{prettifyDate endDate}} </span>
+              <span class="pull-right"> {{prettifyDate startDate}} -
+                {{prettifyDate endDate}} </span>
             </div>
           </div>
           <div class="row company-description">
@@ -122,12 +118,11 @@
                 {{prettifyDate endDate}}
               </div>
             </div>
-
           </div>
           {{/each}}
         </div>
-
       </div>
+
     </div>    <!-- /end container-fluid -->
   </body>
 </html>
