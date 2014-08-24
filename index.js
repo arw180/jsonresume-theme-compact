@@ -12,7 +12,11 @@ function render(resume) {
 	});
 };
 
+
 Handlebars.registerHelper("prettifyDate", function(resumeDate) {
+  if (!resumeDate) {
+    return 'Present';
+  }
   var newDate = Moment(resumeDate).format('MMM YYYY');
   console.log('newDate: ' + newDate);
   return newDate;

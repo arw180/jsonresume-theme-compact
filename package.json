@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-compact",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A JSON Resume theme for a compact look",
   "main": "index.js",
   "scripts": {
